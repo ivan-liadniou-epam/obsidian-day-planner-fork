@@ -123,6 +123,18 @@
     transition: 0.05s linear;
   }
 
+  .task a {
+    color: var(--text-on-accent);
+    font-weight: 500;
+    text-decoration-line: var(--link-decoration);
+  }
+
+  .task a:hover {
+    color: var(--text-accent-hover);
+    font-weight: 600;
+    cursor: grab;
+  }
+
   .is-ghost {
     opacity: 60%;
   }
