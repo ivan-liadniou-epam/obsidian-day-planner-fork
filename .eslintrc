@@ -13,7 +13,6 @@
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:svelte/recommended",
-    "plugin:jest/recommended",
     "plugin:import/recommended",
     "plugin:import/typescript"
   ],
@@ -45,7 +44,6 @@
     "@typescript-eslint/ban-ts-comment": "off",
     "@typescript-eslint/no-empty-function": "off",
     "no-prototype-builtins": "off",
-    "jest/no-disabled-tests": "off",
     "svelte/sort-attributes": "warn",
     "import/order": [
       "warn",
@@ -61,7 +59,8 @@
       "error",
       {
         "ignore": [
-          "^obsidian$"
+          "^obsidian$",
+          "@testing-library/svelte"
         ]
       }
     ]

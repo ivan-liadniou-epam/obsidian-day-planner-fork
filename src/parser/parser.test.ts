@@ -6,6 +6,18 @@ import * as subtasks from "./fixtures/subtasks";
 import * as withoutTasks from "./fixtures/without-tasks";
 import { parsePlanItems } from "./parser";
 
+vi.mock("obsidian-daily-notes-interface", () => {
+  return {
+    default: {},
+  };
+});
+
+vi.mock("obsidian", () => {
+  return {};
+});
+
+vi.mock("");
+
 const defaultPlannerHeading = "Day planner";
 
 // todo: replace with toMatchObject

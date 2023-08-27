@@ -19,7 +19,8 @@
     "types": [
       "node",
       "svelte",
-      "jest"
+      "vitest/globals",
+      "@testing-library/jest-dom"
     ]
   },
   "exclude": [
